@@ -10,32 +10,35 @@
 </head>
 
 <body>
+    <main>
+        <h1>Jogo da Velha</h1>
+        <div class="content">
+            <section id="blocks" class="blocks">
+                <div id="a1"></div>
+                <div id="a2"></div>
+                <div id="a3"></div>
 
-    <h1>Jogo da Velha</h1>
+                <div id="b1"></div>
+                <div id="b2"></div>
+                <div id="b3"></div>
 
-    <section id="main">
-        <div id="a1"></div>
-        <div id="a2"></div>
-        <div id="a3"></div>
+                <div id="c1"></div>
+                <div id="c2"></div>
+                <div id="c3"></div>
+            </section>
+        </div>
+        <h2>Vez do jogador
+            <img id="playerTime" src="Images/X.png">
+        </h2>
 
-        <div id="b1"></div>
-        <div id="b2"></div>
-        <div id="b3"></div>
-
-        <div id="c1"></div>
-        <div id="c2"></div>
-        <div id="c3"></div>
-    </section>
-
-    <h2>Vez do jogador <img id="playerTime" src="Images/X.png"></h2>
-    
-    <div id="result">
-        <spam id="winnerX">Jogador <img class="playerWin" src="Images/X.png">, venceu!</spam>
-        <spam id="winnerO">Jogador <img class="playerWin" src="Images/O.png">, venceu!</spam>
-        <spam id="tie">Deu velha!</spam>
-        <button id="restart">Repetir</button>
-    </div>
-
+        <div id="result">
+            <spam id="winnerX">Jogador <img class="playerWin" src="Images/X.png">, venceu!</spam>
+            <spam id="winnerO">Jogador <img class="playerWin" src="Images/O.png">, venceu!</spam>
+            <spam id="tie">Deu velha!</spam>
+            <button id="restart">Repetir</button>
+        </div>
+        
+    </main>
     <script src="script.js"></script>
 </body>
 

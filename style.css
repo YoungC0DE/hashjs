@@ -4,18 +4,58 @@
     padding: 0;
 }
 
-body {
-    height: 100%;
+main {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background-image: url("Images/fundo.jpg");
     background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 360px;
+    min-width: 360px;
+    height: auto;
+    align-items: center;
+}
+
+.blocks {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.blocks div {
+    height: 120px;
+    width: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    border: 2px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blocks div:hover {
+    background-color: #ffffff50;
+}
+
+.blocks:hover {
+    cursor: url(Images/X.png) 50 50, pointer;
 }
 
 h1 {
-    margin-top: 2%;
-    margin-bottom: 3%;
     font-family: sans-serif;
     font-size: 36pt;
     color: white;
@@ -24,7 +64,6 @@ h1 {
 h2 {
     display: flex;
     align-items: center;
-    margin-top: 3%;
     font-family: sans-serif;
     font-size: 30pt;
     color: white;
@@ -33,32 +72,6 @@ h2 {
 h2 img {
     height: 50px;
     width: 50px;
-}
-
-#main {
-    height: 60vh;
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-#main div {
-    height: 125px;
-    width: 125px;
-    border: 2px solid white;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#main div:hover {
-    background-color: #ffffff50;
-}
-
-#main:hover {
-    cursor: url(Images/X.png) 50 50, pointer;
 }
 
 #a1, #a2, #a3 {
@@ -128,17 +141,6 @@ h2 img {
 }
 
 @media (max-width: 600px) {
-    #main {
-        height: 50vh;
-        width: 80%;
-    }
-
-    #main div {
-        height: 25%;
-        width: 30%;
-        background-size: contain;
-    }
-
     #main:hover {
         cursor: default;
     }
@@ -156,12 +158,4 @@ h2 img {
         background-color: transparent;
     }
 
-    h1 {
-        margin-top: 15vh;
-        margin-bottom: 0;
-    }
-
-    h2 {
-        margin-top: 0;
-    }
-}
+} 
